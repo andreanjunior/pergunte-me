@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height:  100%;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+img {
+    margin-top: 0%;
+    transition: filter 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave */
+    border-radius: 8px; /* Define o raio da borda para 8 pixels */
+}
+
+img:hover {
+    filter: brightness(120%); /* Aumenta o brilho em 20% quando o mouse passa por cima */
+    
+}
+
+
+
+
+
+#container {
+    width: 100%;
+    max-width: 400px;
+    height: 100vh; /* Altura total da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente os elementos no centro */
+    align-items: center; /* Alinha horizontalmente os elementos no centro */
+    margin: 0 auto; /* Centralizando o conteúdo na horizontal */
+}
+
+.container {
+    min-height:  100vh;
+ 
+}
+
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+
+}
+
+p {
+    margin-bottom: 40px;
+    opacity: 0.7;
+}
+
+input,
+button {
+    display: block;
+    width: calc(100% - 10px); /* Considerando o padding de 20px em cada lado */
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluindo o padding na largura total */
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button {
+    /* Definindo o gradiente linear rosa */
+    background: linear-gradient(106.5deg, rgba(255, 135, 225, 0.91) 0%, rgba(167, 104, 224, 0.8) 50%, rgba(87, 156, 245, 0.8) 100%);
+    /* Definindo outras propriedades */
+    color: white;
+    border: none;
+    padding: 20px; /* Ajustando o padding para corresponder ao do input */
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 20px; /* Adicionando margem inferior para separar os botões */
+    text-align: center; /* Centralizando o texto */
+}
+
+button:hover {
+    /* Efeito de transformação ao passar o mouse */
+    transform: translateY(-3px);
+    /* Altera a cor de fundo para um tom mais escuro e mais brilhante */
+    background: linear-gradient(106.5deg, rgba(255, 135, 225, 0.9) 0%, rgba(167, 104, 224, 0.8) 50%, rgba(87, 156, 245, 0.8) 100%);
+    /* Aumenta a saturação e brilho para dar um efeito luminoso */
+    filter: saturate(120%) brightness(110%);
+    /* Aumenta a sombra para dar profundidade */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#resposta {
+    margin-top: 30px;
+    transition: opacity 1.5s;
+}
+
+#resposta div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
